@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="Cad_prod_style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Produto</h2>
+        <form id="produtoForm" method="post" action="/cadastrarProduto">
+            <div class="form-group">
+                <label for="codigoBarras">Código de Barras:</label>
+                <input type="text" id="codigoBarras" name="codigoBarras" placeholder="Informe o código de barras" required>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição do Produto:</label>
+                <input type="text" id="descricao" name="descricao" placeholder="Informe a descrição do produto" required>
+            </div>
+            <div class="form-group">
+                <label for="precoCusto">Preço de Custo:</label>
+                <input type="number" step="0.01" id="precoCusto" name="precoCusto" placeholder="Informe o preço de custo" required>
+            </div>
+            <div class="form-group">
+                <label for="precoVenda">Preço de Venda:</label>
+                <input type="number" step="0.01" id="precoVenda" name="precoVenda" placeholder="Informe o preço de venda" required>
+            </div>
+            <div class="form-group">
+                <label for="dataValidade">Data de Validade:</label>
+                <input type="date" id="dataValidade" name="dataValidade" required>
+            </div>
+            <div class="form-group">
+                <label for="qtdEstoque">Qtd em Estoque:</label>
+                <input type="number" id="qtdEstoque" name="qtdEstoque" placeholder="Informe a quantidade em estoque" required>
+            </div>
+            <div class="form-group">
+                <label for="nomeFabricante">Nome do Fabricante:</label>
+                <input type="text" id="nomeFabricante" name="nomeFabricante" placeholder="Informe o nome do fabricante" required>
+            </div>
+            <div class="form-group">
+                <button type="reset" class="btn btn-secondary">Limpar</button>
+                <button type="submit" class="btn btn-primary">Gravar</button>
+            </div>
+        </form>
+        <a href="/listarProdutos" class="btn btn-secondary">Ver Produtos</a>
+    </div>
+</body>
+</html>

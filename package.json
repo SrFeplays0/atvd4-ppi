@@ -1,0 +1,30 @@
+{
+  "name": "atvd4-ppi",
+  "version": "1.0.0",
+  "description": "web app http post e validação",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SrFeplays0/atvd4-ppi.git"
+  },
+  "keywords": [
+    "http",
+    "post",
+    "validaçao"
+  ],
+  "author": "felipe rodrigues da luz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SrFeplays0/atvd4-ppi/issues"
+  },
+  "homepage": "https://github.com/SrFeplays0/atvd4-ppi#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}

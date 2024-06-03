@@ -21,6 +21,10 @@ app.use(session({
     saveUninitialized: true
 }));
 
+app.get('/', (req, res) => {
+    res.redirect('/login');
+});
+
 // Página de login
 app.get('/login', (req, res) => {
     res.sendFile(path.join(process.cwd(), 'publico', 'login.html'));
